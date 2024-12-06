@@ -1,15 +1,16 @@
 package fizzbuzz_if
 
 fun fizzBuzz(i: Int): String {
-    if( i % 15 == 0 ){
-        return "FizzBuzz"
+    val result = if( i % 15 == 0 ){
+        "FizzBuzz"
     } else if (i % 3 == 0 ){
-        return "Fizz"
+        "Fizz"
     } else if(i % 5 == 0 ){
-        return "Buzz"
+        "Buzz"
     } else {
-        return "$i"
+        "$i"
     }
+    return result
 }
 
 fun main(args: Array<String>) {
